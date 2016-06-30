@@ -1,7 +1,8 @@
 package ro.teamnet.zerotohero.oop.graphicshape;
-import java.util.Objects;
 
 import static java.lang.Math.PI;
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 
 /**
  * Created by Adrian.Calancea on 6/30/16.
@@ -10,13 +11,14 @@ public class Circle extends Shape {
     protected int xPos, yPos,radius;
 
     public Circle() {
-        this.xPos = 0;
-        this.yPos = 0;
-        this.radius = 0;
+        this.xPos = 1;
+        this.yPos = 1;
+        this.radius = 1;
     }
-    public Circle(int xpos1) {
-        this.xPos = xpos1;
+    public Circle(int radius) {
+        this.radius= radius;
     }
+
     public Circle(int xpos1,int xpos2) {
         this.xPos = xpos1;
         this.yPos = xpos2;
@@ -28,8 +30,8 @@ public class Circle extends Shape {
     }
 
     @Override
-    public double area() {
-        return super.area();
+    public double area(){
+        return PI*pow(this.radius,2);
     }
 
     @Override
@@ -39,4 +41,22 @@ public class Circle extends Shape {
 
     }
 
+    public void fillColour() {
+
+        System.out.println(color);
+
+    }
+
+    public void fillColour(int culoarea) {
+
+        setColor(culoarea);
+        System.out.println("The circle color is now "+color);
+
+    }
+
+    public void fillColour(float saturatia) {
+
+        setSaturation(saturatia);
+
+    }
 }

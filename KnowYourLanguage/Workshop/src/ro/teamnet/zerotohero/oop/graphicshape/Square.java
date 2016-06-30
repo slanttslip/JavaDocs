@@ -5,12 +5,12 @@ package ro.teamnet.zerotohero.oop.graphicshape;
  */
 public class Square extends Shape {
 private int side;
-    public Square(){
-        this.side=0;
+    public Square( int sidee){
+        this.side=sidee;
     }
 
     @Override
     public double area() {
-        return super.area();
+        return this.side*this.side;
     }
 }
