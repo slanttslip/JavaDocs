@@ -1,0 +1,1 @@
+﻿Tomcat este serverul utilizat pentru a crea și interpreta pagini web folosind tehnologia JSP (Java Servlet Pages), componentă a Java SE (Standard Edition).  Acest tip de server Apache Tomcat se instalează simplu pe un calculator Windows, pentru a utiliza JSP.
